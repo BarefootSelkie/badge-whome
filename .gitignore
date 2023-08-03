@@ -3,6 +3,9 @@
 .vscode
 *.old
 
+# parts.json - remove if you want to sync this with git
+/alt-parts/parts.json
+
 # Badger2040 base files
 
 launcher.py
