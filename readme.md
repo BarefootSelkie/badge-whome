@@ -4,12 +4,14 @@
 
 ### /alt-parts/parts.json example
 
+There is an example file in `/alt-parts` this needs renaming from `parts-example.json` to `parts.json`
+
 ``{
     "label": {
         "name": "Display Name",
         "pronouns": "They / Them",
-        "pips": "4",
-        "tag": "I'm the coolest one of us"
+        "tag": "I'm the coolest one of us",
+        "pips": "4"
     }
 }`` 
 
@@ -19,6 +21,6 @@ name - the name that you want displayed in the top row of the screen ( max 8 cha
 
 pronouns - medium sized text displayed under your name ( max 10 characters )
 
-pips - the pips space can display beween 0 and 4 pips with half pips, so this accepts any number between 0 and 8, numbers higher than 8 will just display 4 full pips, non-numbers or numbers less than 0 will display no pips 
-
 tag - some fun text to be displayed at the bottom of the screen, under pronouns ( max 2 lines of 20 characters, but wrapping will make this less )
+
+pips - the pips space can display beween 0 and 4 pips with half pips, so this accepts any number between 0 and 8, numbers higher than 8 will just display 4 full pips, non-numbers or numbers less than 0 will display no pips 
