@@ -86,17 +86,28 @@ def draw_screen(key):
     # Write pronouns to screen
     display.set_thickness(2)
     pronounWidth = display.measure_text(gParts[key]["pronouns"], pronounSize)
-    pronounIndent = ((pronounSpace - pronounWidth) // 2) + 8
+    pronounIndent = ((pronounSpace - pronounWidth) // 2) + 16
     display.text(gParts[key]["pronouns"], pronounIndent, pronounRow, pronounSpace, pronounSize)
 
     # Write tagline to screen, can use up to two lines
     display.set_font("bitmap6")
-    display.text(gParts[key]["tag"], 16, tagRow, tagSpace, tagSize)
+    display.text(gParts[key]["tag"], 18, tagRow, tagSpace, tagSize)
 
     # Display the correct number of pips in the bottom left corner
-    # This needs to be changed, it's currently just displaying the number for testing
-    display.text(gParts[key]["pips"], 0, 120, 64, pipsSize)
+    # display.text(gParts[key]["pips"], 0, 120, 64, pipsSize)
 
+    displayPips = 0
+    
+    # Check if pips are a number if so convert string to int, if not do nothing
+    if gParts[key]["pips"].isdigit():
+        displayPips = int(gParts[key]["pips"])
+
+    for x in range(displayPips // 2):
+        jpeg.open_file("/alt-parts/pip-full.jpg")
+        jpeg.decode(0, 112 - (x * 16))
+    if (displayPips % 2) is not 0: # if displayPips is odd
+        jpeg.open_file("/alt-parts/pip-half.jpg")
+        jpeg.decode(0, 112 - ((displayPips // 2) * 16))
 
     # Update the display
     display.update()
