@@ -1,4 +1,4 @@
-# badger-whome
+# badge-whome
 **A Badger2040 app for plural people**
 
 A name and pronouns badge that can be changed using the front buttons on the Badger2040, so that you can have multipul different name and pronoun sets avaible for use. Designed by a plural person for use at events where it can be out, but there are multipul other uses for it including characters, cosplays, furonas, etc.
