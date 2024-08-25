@@ -86,7 +86,7 @@ def draw_screen(key):
     # Write pronouns to screen
     display.set_thickness(2)
     pronounWidth = display.measure_text(gParts[key]["pronouns"], pronounSize)
-    pronounIndent = ((pronounSpace - pronounWidth) // 2) + 16
+    pronounIndent = ((pronounSpace - pronounWidth) // 2) + 16   
     display.text(gParts[key]["pronouns"], pronounIndent, pronounRow, pronounSpace, pronounSize)
 
     # Write tagline to screen, can use up to two lines
