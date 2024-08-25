@@ -1,0 +1,104 @@
+{
+    "aithne": {
+        "name": "Aithne",
+        "pronouns": "Xe / Xem",
+        "tag": "I'm just me",
+        "pips": "0"
+    },
+    "selkie":{
+        "name": "Selkie",
+        "pronouns": "fae",
+        "tag": "@BarefootSelkie on most socials",
+        "pips": "0"
+    },
+    "alice":{
+        "name":"Alice",
+        "pronouns": "she / her",
+        "tag":"",
+        "pips":"8"
+    },
+    "phantom":{
+        "name": "Phantom",
+        "pronouns":"Xe / Xem",
+        "tag":"",
+        "pips":"6"
+    },
+    "river":{
+        "name":"River",
+        "pronouns": "she / her",
+        "tag":"",
+        "pips":"1"
+    },
+    "yt":{
+        "name":"YT",
+        "pronouns": "she / her",
+        "tag":"Yours Truely",
+        "pips":"7"
+    },
+    "zhaan":{
+        "name":"Zhaan",
+        "pronouns":"xe / she",
+        "tag":"",
+        "pips":"5"
+    },
+    "fae":{
+        "name":"Fae",
+        "pronouns":"fae",
+        "tag":"",
+        "pips":"1"
+    },
+    "senara":{
+        "name":"Senara",
+        "pronouns": "fae",
+        "tag":"Selkie",
+        "pips":"2"
+    },
+    "isla":{
+        "name":"Isla",
+        "pronouns": "it / she",
+        "tag":"Set the world on fire",
+        "pips":"3"
+    },
+    "lorelai":{
+        "name":"Lorelai",
+        "pronouns":"he / ze",
+        "tag":"",
+        "pips":"1"
+    },
+    "eclipse":{
+        "name":"Eclipse",
+        "pronouns":"xe / xem",
+        "tag":"Eclipse Actual",
+        "pips":"3"
+    },
+    "99": {
+        "name": "99",
+        "pronouns": "she / ze",
+        "tag": "i fly the eclipse",
+        "pips": "5"
+    },
+    "echo":{
+        "name":"Echo",
+        "pronouns": "xe / xem",
+        "tag":"Eclipse - Drop pilot",
+        "pips":"4"
+    },
+    "raven":{
+        "name":"Raven",
+        "pronouns": "she / it",
+        "tag":"Eclipse - Systems Engineer",
+        "pips":"4"
+    },
+    "rayne":{
+        "name": "Rayne",
+        "pronouns":"she / ze",
+        "tag": "Eclipse - Engineering",
+        "pips": "3"
+    },
+    "trance":{
+        "name": "Trance",
+        "pronouns":"ae / aer",
+        "tag": "Eclipse - Environmental",
+        "pips": "5"
+    }
+}

@@ -9,7 +9,7 @@ gScreenWidth = badger2040.WIDTH
 gScreenHeight = badger2040.HEIGHT
 
 # Where to find the json file with the parts in
-gPartsPath = "/alt-parts/parts.json"
+gPartsPath = "/whome/parts.json"
 
 #This will only be displayed if something goes wrong, like no json file
 gDefaultText = { "error":{ "name": "Error", "pronouns": "Err/or", "pips": "0", "tag":"Json file not found" } }
@@ -22,12 +22,12 @@ state = {
 # Check to see if an image file exists for person, and if so return the path to it, if not return the path of the default image
 
 def checkimage(name):
-    path = "/alt-parts/" + name + ".jpg"
+    path = "/whome/" + name + ".jpg"
     try:
         os.stat(path)
         return path
     except OSError:
-        path = "/alt-parts/default.jpg"
+        path = "/whome/default.jpg"
         return path
     
 # --- Utility functions ---
@@ -103,10 +103,10 @@ def draw_screen(key):
         displayPips = int(gParts[key]["pips"])
 
     for x in range(displayPips // 2):
-        jpeg.open_file("/alt-parts/pip-full.jpg")
+        jpeg.open_file("/whome/pip-full.jpg")
         jpeg.decode(0, 112 - (x * 16))
     if (displayPips % 2) is not 0: # if displayPips is odd
-        jpeg.open_file("/alt-parts/pip-half.jpg")
+        jpeg.open_file("/whome/pip-half.jpg")
         jpeg.decode(0, 112 - ((displayPips // 2) * 16))
 
     # Update the display
@@ -122,7 +122,7 @@ display.set_thickness(2)
 
 jpeg = jpegdec.JPEG(display.display)
 
-badger_os.state_load("alt-parts", state)
+badger_os.state_load("whome", state)
 
 changed = True
 
@@ -170,7 +170,7 @@ while True:
 
     if changed:
         draw_screen(list(gParts.keys())[state["currentPart"]])
-        badger_os.state_save("alt-parts", state)
+        badger_os.state_save("whome", state)
         changed = False
 
     # Halt the Badger to save power, it will wake up if any of the front buttons are pressed
